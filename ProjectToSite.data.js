@@ -18,8 +18,8 @@ Module.expectedDataFileDownloads++;
     } else {
       throw 'using preloaded data can only be done on a web page or in a web worker';
     }
-    var PACKAGE_NAME = 'D:/1_UE4_GTA_Game/UE4GTA_Game/Move_to_site/ProjectToSite/Binaries/HTML5/ProjectToSite.data';
-    var REMOTE_PACKAGE_BASE = 'ProjectToSite.data';
+    var PACKAGE_NAME = 'https://dl.dropboxusercontent.com/s/whdvo161vsc74le/ProjectToSite.data?dl=0';
+    var REMOTE_PACKAGE_BASE = 'https://dl.dropboxusercontent.com/s/whdvo161vsc74le/ProjectToSite.data?dl=0';
     if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
       Module['locateFile'] = Module['locateFilePackage'];
       err('warning: you defined Module.locateFilePackage, that has been renamed to Module.locateFile (using your locateFilePackage for now)');
